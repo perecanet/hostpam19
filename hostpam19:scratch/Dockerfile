@@ -8,4 +8,5 @@ WORKDIR /opt/docker
 RUN dnf -y install procps util-linux-user finger passwd pam_mount nfs-utils nss-pam-ldapd
 COPY * /opt/docker/
 RUN chmod +x /opt/docker/startup.sh
+CMD /opt/docker/startup.sh
 
